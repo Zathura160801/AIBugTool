@@ -1,0 +1,114 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "5.4.1",
+      "isInstalled": true,
+      "creationTime": "07/02/2026 02:27:13 +00:00"
+    },
+    "Volo.Abp.Account": {
+      "version": "10.4.1",
+      "isInstalled": true,
+      "creationTime": "07/02/2026 02:27:13 +00:00"
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "10.4.1",
+      "isInstalled": true,
+      "creationTime": "07/02/2026 02:27:13 +00:00"
+    },
+    "Volo.Abp.Identity": {
+      "version": "10.4.1",
+      "isInstalled": true,
+      "creationTime": "07/02/2026 02:27:13 +00:00"
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "10.4.1",
+      "isInstalled": true,
+      "creationTime": "07/02/2026 02:27:13 +00:00"
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "10.4.1",
+      "isInstalled": true,
+      "creationTime": "07/02/2026 02:27:13 +00:00"
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "10.4.1",
+      "isInstalled": true,
+      "creationTime": "07/02/2026 02:27:13 +00:00"
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "10.4.1",
+      "isInstalled": true,
+      "creationTime": "07/02/2026 02:27:13 +00:00"
+    },
+    "Volo.Abp.BlobStoring.Database": {
+      "version": "10.4.1",
+      "isInstalled": true,
+      "creationTime": "07/02/2026 02:27:13 +00:00"
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "AIBugTool.Application": {
+      "path": "src/AIBugTool.Application/AIBugTool.Application.abppkg",
+      "folder": "src"
+    },
+    "AIBugTool.Application.Tests": {
+      "path": "test/AIBugTool.Application.Tests/AIBugTool.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "AIBugTool.Domain.Shared": {
+      "path": "src/AIBugTool.Domain.Shared/AIBugTool.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "AIBugTool.Application.Contracts": {
+      "path": "src/AIBugTool.Application.Contracts/AIBugTool.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "AIBugTool.HttpApi": {
+      "path": "src/AIBugTool.HttpApi/AIBugTool.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "AIBugTool.HttpApi.Client": {
+      "path": "src/AIBugTool.HttpApi.Client/AIBugTool.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "AIBugTool.EntityFrameworkCore.Tests": {
+      "path": "test/AIBugTool.EntityFrameworkCore.Tests/AIBugTool.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "AIBugTool.EntityFrameworkCore": {
+      "path": "src/AIBugTool.EntityFrameworkCore/AIBugTool.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "AIBugTool.TestBase": {
+      "path": "test/AIBugTool.TestBase/AIBugTool.TestBase.abppkg",
+      "folder": "test"
+    },
+    "AIBugTool.Domain.Tests": {
+      "path": "test/AIBugTool.Domain.Tests/AIBugTool.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "AIBugTool.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/AIBugTool.HttpApi.Client.ConsoleTestApp/AIBugTool.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "AIBugTool.DbMigrator": {
+      "path": "src/AIBugTool.DbMigrator/AIBugTool.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "AIBugTool.HttpApi.Host": {
+      "path": "src/AIBugTool.HttpApi.Host/AIBugTool.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "AIBugTool.Domain": {
+      "path": "src/AIBugTool.Domain/AIBugTool.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

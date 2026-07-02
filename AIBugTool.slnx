@@ -1,0 +1,23 @@
+<Solution>
+    <Configurations>
+        <Platform Name="Any CPU" />
+    </Configurations>
+    <Folder Name="/src/">
+        <Project Path="src/AIBugTool.Domain/AIBugTool.Domain.csproj" />
+        <Project Path="src/AIBugTool.Application/AIBugTool.Application.csproj" />
+        <Project Path="src/AIBugTool.EntityFrameworkCore/AIBugTool.EntityFrameworkCore.csproj" />
+        <Project Path="src/AIBugTool.Domain.Shared/AIBugTool.Domain.Shared.csproj" />
+        <Project Path="src/AIBugTool.Application.Contracts/AIBugTool.Application.Contracts.csproj" />
+        <Project Path="src/AIBugTool.HttpApi/AIBugTool.HttpApi.csproj" />
+        <Project Path="src/AIBugTool.HttpApi.Client/AIBugTool.HttpApi.Client.csproj" />
+        <Project Path="src/AIBugTool.HttpApi.Host/AIBugTool.HttpApi.Host.csproj" />
+        <Project Path="src/AIBugTool.DbMigrator/AIBugTool.DbMigrator.csproj" />
+    </Folder>
+    <Folder Name="/test/">
+        <Project Path="test/AIBugTool.Application.Tests/AIBugTool.Application.Tests.csproj" />
+        <Project Path="test/AIBugTool.EntityFrameworkCore.Tests/AIBugTool.EntityFrameworkCore.Tests.csproj" />
+        <Project Path="test/AIBugTool.TestBase/AIBugTool.TestBase.csproj" />
+        <Project Path="test/AIBugTool.Domain.Tests/AIBugTool.Domain.Tests.csproj" />
+        <Project Path="test/AIBugTool.HttpApi.Client.ConsoleTestApp/AIBugTool.HttpApi.Client.ConsoleTestApp.csproj" />
+    </Folder>
+</Solution>
