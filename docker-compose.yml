@@ -6,6 +6,7 @@ services:
       ACCEPT_EULA: Y
     ports:
       - "5341:80"
+    restart: unless-stopped
     volumes:
       - seq-data:/data
 
@@ -15,7 +16,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - ./prometheus.yml/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
 
 volumes:
   seq-data:
