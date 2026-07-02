@@ -12,10 +12,13 @@ public class Program
 {
     public async static Task<int> Main(string[] args)
     {
+        var seqServerUrl = Environment.GetEnvironmentVariable("SEQ_SERVER_URL") ?? "http://localhost:5341";
+
         Log.Logger = new LoggerConfiguration()
             .WriteTo.Async(c => c.File("Logs/logs.txt"))
             .WriteTo.Async(c => c.Console())
-            .CreateBootstrapLogger();
+            .WriteTo.Async(c => c.Seq(seqServerUrl))
+            .CreateLogger();
 
         try
         {
@@ -29,7 +32,8 @@ public class Program
                     loggerConfiguration
                         .ReadFrom.Configuration(context.Configuration)
                         .ReadFrom.Services(services)
-                        .WriteTo.Async(c => c.AbpStudio(services));
+                        .WriteTo.Async(c => c.AbpStudio(services))
+                        .WriteTo.Async(c => c.Seq(seqServerUrl));
                 });
             await builder.AddApplicationAsync<AIBugToolHttpApiHostModule>();
             var app = builder.Build();
