@@ -281,3 +281,7 @@ src/AIBugTool.Blazor.Server.Tiered/Logs/*
 # IdentityServer temp files
 tempkey.rsa
 tempkey.jwk
+
+# SQLite database files
+AIBugTool.db-shm
+AIBugTool.db-wal
