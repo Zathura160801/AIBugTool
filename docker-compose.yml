@@ -41,6 +41,7 @@ services:
     volumes:
       - ollama-data:/root/.ollama
     restart: unless-stopped
+    gpus: all
 
 volumes:
   seq-data:
