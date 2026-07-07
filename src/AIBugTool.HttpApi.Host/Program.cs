@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
+using Prometheus;
 
 namespace AIBugTool;
 
@@ -37,7 +38,13 @@ public class Program
                 });
             await builder.AddApplicationAsync<AIBugToolHttpApiHostModule>();
             var app = builder.Build();
+
+            app.UseHttpMetrics();   // <-- tambahan Prometheus
+
             await app.InitializeApplicationAsync();
+
+            app.MapMetrics();        // <-- expose GET /metrics
+
             await app.RunAsync();
             return 0;
         }
